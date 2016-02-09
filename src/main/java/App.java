@@ -5,7 +5,8 @@ public class App {
   public static void main(String[] args) {}
   public Integer scrabbleScore(String inputWord) {
     int score = 0;
-    String[] inputWordArray = inputWord.split("");
+    String inputWordLowercase = inputWord.toLowerCase();
+    String[] inputWordArray = inputWordLowercase.split("");
 
       HashMap<String, Integer> letterScores = new HashMap();
 

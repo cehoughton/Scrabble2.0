@@ -9,4 +9,12 @@ public class ScrabbleTest {
     Integer score= 1;
     assertEquals(score, app.scrabbleScore("a"));
   }
+
+  @Test
+  public void scrabbleScore_rturnsAScrabbleScoreForApple_9() {
+    App app = new App();
+    Integer score = 9;
+    assertEquals(score, app.scrabbleScore("applE"));
+  }
+
 }
